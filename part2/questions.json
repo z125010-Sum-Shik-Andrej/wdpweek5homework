@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Which of the following is NOT one of the four Bell states?",
+    "options": [
+      "(|00⟩ + |11⟩)/√2",
+      "(|01⟩ + |10⟩)/√2",
+      "(|10⟩ + |00⟩)/√2",
+      "(|01⟩ − |10⟩)/√2"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is H|1⟩ (the action of a Hadamard on |1⟩)?",
+    "options": [
+      "(|0⟩ + |1⟩)/√2",
+      "(|0⟩ − |1⟩)/√2",
+      "|1⟩",
+      "|0⟩"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of these single-qubit gates alone is universal for arbitrary single-qubit rotations?",
+    "options": [
+      "T = diag(1, e^{iπ/4})",
+      "S = diag(1, i)",
+      "Rₓ(θ) = exp(−i θ X/2)",
+      "Z"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which two-qubit state is the maximally mixed state?",
+    "options": [
+      "½(|00⟩⟨00| + |11⟩⟨11|)",
+      "¼ I₄",
+      "½(|01⟩⟨10| + |10⟩⟨01|)",
+      "A Bell state"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the circuit depth to prepare an n-qubit GHZ state using H and CNOT gates?",
+    "options": [
+      "1",
+      "n",
+      "⌈log₂ n⌉ + 1",
+      "2n"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which of these is NOT a Clifford gate?",
+    "options": [
+      "CNOT",
+      "S",
+      "T",
+      "Hadamard"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "For the single-qubit rotation U(θ)=exp(−i θ σₓ/2), the parameter-shift rule can be written as E'(θ) = [E(θ+s) − E(θ−s)]/2. What is the shift s?",
+    "options": [
+      "π/2",
+      "π",
+      "π/4",
+      "3π/2"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "After H on the control qubit and a controlled-Rₓ(φ) on the target (initialized to |0⟩), is the two-qubit state entangled?",
+    "options": [
+      "Yes, maximally entangled",
+      "No, the target only picks up a global phase",
+      "Yes, partially entangled",
+      "Cannot tell without φ"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In quantum phase estimation, after applying the inverse QFT on the control register and measuring, what information do you obtain?",
+    "options": [
+      "The eigenphase φ in binary form",
+      "The amplitudes of the eigenvector",
+      "The energy eigenvalue directly",
+      "The success probability"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In quantum teleportation, how many classical bits must be sent to complete the protocol?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which regularization adds an α ∥w∥₁ penalty to the loss?",
+    "options": [
+      "Lasso",
+      "Ridge",
+      "Elastic Net",
+      "Dropout"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In logistic regression, the gradient of the log-likelihood w.r.t. w is:",
+    "options": [
+      "∑(yᵢ − h(xᵢ)) xᵢ",
+      "∑(h(xᵢ) − yᵢ) xᵢ",
+      "∑(h(xᵢ)(1−h(xᵢ))) xᵢ",
+      "∑(yᵢ h(xᵢ)) xᵢ"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does dropout do at training time?",
+    "options": [
+      "Sets a random subset of activations to zero",
+      "Adds Gaussian noise to inputs",
+      "Shuffles mini-batches",
+      "Applies L2 regularization"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which kernel is NOT positive-definite?",
+    "options": [
+      "Gaussian RBF",
+      "Polynomial kernel of even degree",
+      "Sinc kernel (sin x)/x",
+      "Linear kernel"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In reinforcement learning, the Bellman equation relates:",
+    "options": [
+      "State values to expected future rewards",
+      "Policy parameters to Q-values",
+      "Advantage to TD-error",
+      "Actions directly to rewards"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Batch normalization computes:",
+    "options": [
+      "Mean and variance per feature per minibatch",
+      "Running averages of weights",
+      "Gradient clipping factors",
+      "Learning rate schedules"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which optimizer uses only the first moment (mean) of past gradients?",
+    "options": [
+      "SGD with momentum",
+      "RMSprop",
+      "Adam",
+      "Adagrad"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "How does the Adam optimizer update its parameters?",
+    "options": [
+      "Using only the current gradient",
+      "Using exponentially decayed past gradients and current gradient",
+      "Using only squared gradients",
+      "Using full-batch gradients only"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In backpropagation through a ReLU → Softmax network with MSE loss, ∂L/∂x up to constant factors is:",
+    "options": [
+      "Wᵀ[(z − y) ∘ z ∘ (1 − z)] ∘ 1_{Wx + b > 0}",
+      "Uᵀ[(z − y) ∘ (Ua + c)] ∘ 1_{a > 0}",
+      "Wᵀ[Uᵀ[(z − y) ∘ z]] ∘ 1_{Wx + b > 0}",
+      "Uᵀ[(z − y) ∘ z ∘ (1 − z)] ∘ 1_{Wx + b > 0}"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which loss is more sensitive to outliers?",
+    "options": [
+      "Mean Absolute Error (MAE)",
+      "Mean Squared Error (MSE)",
+      "Both equally",
+      "Neither"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Who was the first emperor of a unified China?",
+    "options": [
+      "Liu Bang",
+      "Qin Shi Huang",
+      "Han Wudi",
+      "Zhang Qian"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which test compares two means assuming equal variances?",
+    "options": [
+      "Welch’s t-test",
+      "Student’s t-test",
+      "Mann–Whitney U test",
+      "Kolmogorov–Smirnov test"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Translate to English: “今日はいい天気ですね。”",
+    "options": [
+      "It’s hot today, isn’t it?",
+      "The weather is nice today, isn’t it?",
+      "Good morning, everyone.",
+      "Today is a holiday, right?"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Solve for x: 2x² − 3x − 5 = 0.",
+    "options": [
+      "(3 ± √(9 + 40)) / 4",
+      "(3 ± √(9 − 40)) / 4",
+      "(-3 ± √(9 + 40)) / 4",
+      "(-3 ± √(9 − 40)) / 4"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "A continuous function on [0,1] is guaranteed Riemann-integrable by which criterion?",
+    "options": [
+      "Stone–Weierstrass theorem",
+      "Heine–Cantor theorem",
+      "Riemann’s integrability criterion",
+      "Bolzano–Weierstrass theorem"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is d/dx ln(sin x)?",
+    "options": [
+      "cot x",
+      "tan x",
+      "csc x",
+      "sec x"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the capital of Kazakhstan?",
+    "options": [
+      "Almaty",
+      "Astana",
+      "Nur Sultan",
+      "Shymkent"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In propositional logic, p ⇒ q is equivalent to:",
+    "options": [
+      "¬p ∨ q",
+      "p ∧ q",
+      "¬(p ∧ ¬q)",
+      "q ⇒ p"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which of these is a primitive root modulo 7?",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "5"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "If X ~ Binomial(n,p), what is E[X]?",
+    "options": [
+      "n p",
+      "n(1−p)",
+      "p/(1−p)",
+      "√(n p (1−p))"
+    ],
+    "answer": 0
+  }
+]
