@@ -44,7 +44,7 @@
     "options": [
       "1",
       "n",
-      "⌈log₂ n⌉ + 1",
+      "⌈log₂ n⌉ + 1",
       "2n"
     ],
     "answer": 2
@@ -100,7 +100,7 @@
     "answer": 1
   },
   {
-    "question": "Which regularization adds an α ∥w∥₁ penalty to the loss?",
+    "question": "Which regularization adds an α ∥w∥₁ penalty to the loss?",
     "options": [
       "Lasso",
       "Ridge",
@@ -112,10 +112,10 @@
   {
     "question": "In logistic regression, the gradient of the log-likelihood w.r.t. w is:",
     "options": [
-      "∑(yᵢ − h(xᵢ)) xᵢ",
-      "∑(h(xᵢ) − yᵢ) xᵢ",
-      "∑(h(xᵢ)(1−h(xᵢ))) xᵢ",
-      "∑(yᵢ h(xᵢ)) xᵢ"
+      "∑(yᵢ − h(xᵢ)) xᵢ",
+      "∑(h(xᵢ) − yᵢ) xᵢ",
+      "∑(h(xᵢ)(1−h(xᵢ))) xᵢ",
+      "∑(yᵢ h(xᵢ)) xᵢ"
     ],
     "answer": 1
   },
@@ -134,7 +134,7 @@
     "options": [
       "Gaussian RBF",
       "Polynomial kernel of even degree",
-      "Sinc kernel (sin x)/x",
+      "Sinc kernel (sin x)/x",
       "Linear kernel"
     ],
     "answer": 2
@@ -212,18 +212,18 @@
   {
     "question": "Which test compares two means assuming equal variances?",
     "options": [
-      "Welch’s t-test",
-      "Student’s t-test",
+      "Welch's t-test",
+      "Student's t-test",
       "Mann–Whitney U test",
       "Kolmogorov–Smirnov test"
     ],
     "answer": 1
   },
   {
-    "question": "Translate to English: “今日はいい天気ですね。”",
+    "question": "Translate to English: "今日はいい天気ですね。"",
     "options": [
-      "It’s hot today, isn’t it?",
-      "The weather is nice today, isn’t it?",
+      "It's hot today, isn't it?",
+      "The weather is nice today, isn't it?",
       "Good morning, everyone.",
       "Today is a holiday, right?"
     ],
@@ -244,7 +244,7 @@
     "options": [
       "Stone–Weierstrass theorem",
       "Heine–Cantor theorem",
-      "Riemann’s integrability criterion",
+      "Riemann's integrability criterion",
       "Bolzano–Weierstrass theorem"
     ],
     "answer": 2
