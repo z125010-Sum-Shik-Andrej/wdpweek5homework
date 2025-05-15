@@ -13,8 +13,14 @@ const resultBox = document.getElementById("result");
 const timerElement = document.getElementById("timer");
 const progressBar = document.getElementById("progress-bar");
 
+// Changed filename from question.json to questions.json (added the 's')
 fetch("questions.json")
-  .then(res => res.json())
+  .then(res => {
+    if (!res.ok) {
+      throw new Error(`Failed to load questions: ${res.status} ${res.statusText}`);
+    }
+    return res.json();
+  })
   .then(data => {
     questions = data;
     // Randomize question order
@@ -23,7 +29,7 @@ fetch("questions.json")
   })
   .catch(err => {
     console.error("Failed to load questions:", err);
-    questionText.textContent = "Error loading quiz data.";
+    questionText.textContent = "Error loading quiz data. Please check the console for details.";
     nextBtn.disabled = true;
   });
 
