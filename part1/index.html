@@ -10,8 +10,9 @@
     body {
       font-family: 'M PLUS 1p', sans-serif;
       padding: 2em;
-      background: linear-gradient(to bottom, #e8f5e9 0%, #ffffff 100%);
-      background-image: url('https://www.transparenttextures.com/patterns/white-paper.png');
+      /* Your zen image as background */
+      background: url('zen\ image.jpg') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
@@ -19,6 +20,7 @@
     }
 
     #quoteBox {
+      /* semi-transparent so you still see the background */
       background: rgba(255, 255, 255, 0.85);
       padding: 1.5em;
       border-radius: 12px;
