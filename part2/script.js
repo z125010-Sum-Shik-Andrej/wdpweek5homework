@@ -13,7 +13,7 @@ const resultBox = document.getElementById("result");
 const timerElement = document.getElementById("timer");
 const progressBar = document.getElementById("progress-bar");
 
-fetch("question.json")
+fetch("questions.json")
   .then(res => res.json())
   .then(data => {
     questions = data;
