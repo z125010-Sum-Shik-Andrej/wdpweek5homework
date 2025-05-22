@@ -12,7 +12,6 @@ const resultBox = document.getElementById("result");
 const timerElement = document.getElementById("timer");
 const progressBar = document.getElementById("progress-bar");
 
-// Changed filename from question.json to questions.json (added the 's')
 fetch("questions.json")
   .then(res => {
     if (!res.ok) {
